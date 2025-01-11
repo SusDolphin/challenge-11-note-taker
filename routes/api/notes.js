@@ -3,7 +3,7 @@ const fs=require("fs");
 
 router.get("/",(req,res)=>{
 
-    fs.readFile("./db/db.json",(err,data)=>{
+    fs.readFile("./db/notes.json",(err,data)=>{
         if(err){
             res.status(500).json(err)
         }else{
