@@ -1,6 +1,6 @@
-const router=require("express").Router();
-const noteRoutes=require("./notes")
+const router=require('express').Router();
+const noteRouters=require('./notes');
 
-router.use("/notes", noteRoutes)
+router.use('/notes', noteRouters);
 
 module.exports=router;
